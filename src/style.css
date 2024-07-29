@@ -1,0 +1,48 @@
+
+.container{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+
+}
+.clock{
+
+    width : 300px;
+    height : 300px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock_face{
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left:0;
+}
+
+.clock::before{
+
+    content: "";
+    width:10px;
+    height: 10px;
+    background-color: red;
+    display: block;
+    top:50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-45%,-45%);
+}
+
+.clock_face-mark{
+
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 0;
+    bottom:0;
+}
